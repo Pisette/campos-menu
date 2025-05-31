@@ -9,20 +9,6 @@
         <h2 style="color:darkblue;">All Breakfast Items</h2>
         <xsl:apply-templates select="breakfast_menu/food"/>
         
-        <h2 style="color:darkgreen;">Foods Priced Over $5.00</h2>
-        <xsl:apply-templates select="breakfast_menu/food[price &gt; 5.00]"/>
-
-        <h2 style="color:darkred;">Foods with 700 Calories or Less</h2>
-        <xsl:apply-templates select="breakfast_menu/food[calories &lt;= 700]"/>
-
-        <!-- Redirect Links Section -->
-        <div style="margin-top:30px; padding:10px; background-color:#f2f2f2; border:1px solid #ccc;">
-          <h3 style="color:darkblue;">DTD and XML Schema</h3>
-          <ul>
-            <li><a href="menu.dtd" target="_blank">View DTD File</a></li>
-            <li><a href="menu.xsd" target="_blank">View XML Schema</a></li>
-          </ul>
-        </div>
 
       </body>
     </html>
