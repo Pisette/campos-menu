@@ -18,28 +18,24 @@
 
       </body>
     </html>
-  </xsl:template>
-
-  <xsl:template match="food">
-  <!-- Top row: Name and price in teal -->
-  <div style="background-color:teal; color:white; padding:10px; margin-top:10px;">
-    <span style="font-weight:bold">
-      <xsl:value-of select="name"/> -
-    </span>
-    <xsl:value-of select="price"/>
-  </div>
-
-  <!-- Description row: Light gray with full background -->
-  <div style="background-color:#f0ecec; color:black; padding:10px; margin-bottom:1em; width:100%; box-sizing:border-box;">
-    <p style="margin: 0;">
-      <xsl:value-of select="description"/>
-      <br/>
-      <span style="font-style:italic">
-        (<xsl:value-of select="calories"/> calories per serving)
+    
+   <xsl:template match="food">
+    <div style="background-color:teal; color:white; padding:4px; margin-top:10px">
+      <span style="font-weight:bold">
+        <xsl:value-of select="name"/> -
       </span>
-    </p>
-  </div>
-</xsl:template>
+      <xsl:value-of select="price"/>
+    </div>
+
+    <div style="background-color:#D8D8D8; color:black; padding:10px; margin-bottom:1em; width:100%; box-sizing:border-box;">
+      <p>
+        <xsl:value-of select="description"/>
+        <span style="font-style:italic">
+          (<xsl:value-of select="calories"/> calories per serving)
+        </span>
+      </p>
+    </div>
+  </xsl:template>
 
 
 
