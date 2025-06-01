@@ -21,21 +21,22 @@
   </xsl:template>
 
   <xsl:template match="food">
-    <div style="background-color:teal; color:white; padding:4px; margin-top:10px">
-      <span style="font-weight:bold">
-        <xsl:value-of select="name"/> -
-      </span>
-      <xsl:value-of select="price"/>
+  <div style="background-color:gray; color:black; padding:10px; margin-top:10px; margin-bottom:10px; width:100%; box-sizing:border-box;">
+
+    <div style="font-weight:bold; font-size:12pt;">
+      <xsl:value-of select="name"/> - <xsl:value-of select="price"/>
     </div>
 
-    <div style="background-color:gray; margin-left:20px; margin-bottom:1em; font-size:10pt">
-      <p>
-        <xsl:value-of select="description"/>
-        <span style="font-style:italic">
-          (<xsl:value-of select="calories"/> calories per serving)
-        </span>
-      </p>
+    <div style="font-size:10pt; padding-top:4px;">
+      <xsl:value-of select="description"/>
+      <br/>
+      <span style="font-style:italic;">
+        (<xsl:value-of select="calories"/> calories per serving)
+      </span>
     </div>
-  </xsl:template>
+
+  </div>
+</xsl:template>
+
 
 </xsl:stylesheet>
