@@ -28,7 +28,7 @@
       <xsl:value-of select="price"/>
     </div>
 
-    <div style="background-color:#f0ecec; margin-left:20px; margin-bottom:1em; font-size:10pt">
+    <div style="background-color:gray; margin-left:20px; margin-bottom:1em; font-size:10pt">
       <p>
         <xsl:value-of select="description"/>
         <span style="font-style:italic">
