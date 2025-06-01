@@ -9,6 +9,12 @@
         <h2 style="color:darkblue;">All Breakfast Items</h2>
         <xsl:apply-templates select="breakfast_menu/food"/>
         
+        <h2 style="color:darkgreen;">Foods Priced Over $5.00</h2>
+       <xsl:apply-templates select="breakfast_menu/food[number(translate(price, '$', '')) &gt; 5.00]"/>
+
+        <h2 style="color:darkred;">Foods with 700 Calories or Less</h2>
+        <xsl:apply-templates select="breakfast_menu/food[calories &lt;= 700]"/>
+        
 
       </body>
     </html>
