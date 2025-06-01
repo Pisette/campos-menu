@@ -6,7 +6,7 @@
     <html xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xsl:version="1.0">
       <body style="font-family:Arial; font-size:12pt; background-color:#EEEEEE">
 
-        <h2 style="color:darkblue;">All Breakfast Items</h2>
+        <h2 style="color:darkblue;">All Breakfast Items meow</h2>
         <xsl:apply-templates select="breakfast_menu/food"/>
         
         <h2 style="color:darkgreen;">Foods Priced Over $5.00</h2>
